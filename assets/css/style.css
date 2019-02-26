@@ -27,7 +27,8 @@
     transform: translateX(0%); }
 
 .navbar-dark .navbar-brand {
-  font-size: 25px;
+  font-size: 35px;
+  font-family: 'Playfair Display', serif;
 }
 
 

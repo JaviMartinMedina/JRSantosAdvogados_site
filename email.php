@@ -1,6 +1,6 @@
 <?php
 
-	$url = 'https://jrsantosadvocacia.000webhostapp.com';
+	$url = 'http://www.jrsantosadvocacia.com.br';
 
     $from = (isset($_POST['email']) ? $_POST['email'] : "site@jrsantosadvocacia.com.br");
     $to = 'joaorsantosadv@gmail.com';

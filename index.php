@@ -1,3 +1,9 @@
+<?php
+if (! isset($_SERVER['HTTPS']) or $_SERVER['HTTPS'] == 'off' ) {
+    $redirect_url = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    header("Location: $redirect_url");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -12,7 +18,7 @@
     <meta property="og:url" content="https://www.jrsantosadvocacia.com.br">
     <meta property="og:description" content="Direito do Trabalho, Direito Previdenciário, Direito de Família, Direito Empresarial, Direito Imobiliário. Conte com nossa experiência para bem assessorá-lo!">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.jrsantosadvocacia.com.br/assets/images/www_jrsantosadvocacia_com_br.jpg">
+    <meta property="og:image" content="https://www.jrsantosadvocacia.com.br/assets/images/www_jrsantosadvocacia_com_br.jpg">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display" rel="stylesheet">
 

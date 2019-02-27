@@ -1,6 +1,5 @@
 <?php
-
-	$url = 'http://www.jrsantosadvocacia.com.br';
+    $url = 'https://www.jrsantosadvocacia.com.br';
 
     $from = (isset($_POST['email']) ? $_POST['email'] : "site@jrsantosadvocacia.com.br");
     $to = 'joaorsantosadv@gmail.com';
@@ -19,9 +18,10 @@
     Celular: $celular \n
     
     Mensagem: $message \n\n ";
-    
+
     $headers = "From:" . $from;
     mail($to,$subject,$message, $headers);
 
-    header('Location: '. $url );   
+    header('Location: '. $url );
 ?>
+~                                                  
